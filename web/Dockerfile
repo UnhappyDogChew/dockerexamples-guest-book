@@ -1,5 +1,8 @@
 FROM node
 WORKDIR /usr/local/src
+COPY package.json .
+COPY yarn.lockk .
+RUN yarn install
 COPY . .
 RUN yarn install --production
 RUN yarn run build

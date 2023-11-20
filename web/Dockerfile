@@ -1,8 +1,8 @@
 FROM node
 WORKDIR /usr/local/src
 COPY . .
-RUN npm install --production
-RUN npm run build
+RUN yarn install --production
+RUN yarn run build
 
 FROM nginx
 WORKDIR /usr/share/nginx/html

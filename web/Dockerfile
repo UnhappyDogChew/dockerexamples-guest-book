@@ -1,7 +1,7 @@
 FROM node
 WORKDIR /usr/local/src
 COPY package.json .
-COPY yarn.lockk .
+COPY yarn.lock .
 RUN yarn install
 COPY . .
 RUN yarn install --production

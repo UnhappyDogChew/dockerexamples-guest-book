@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// TODO: API 호스트 변경하기
 window.env = {
   API_HOST: "http://localhost:8080",
 };
